@@ -1,0 +1,43 @@
+{
+  "name": "trainee-layout-project_2",
+  "version": "0.1.0",
+  "description": "My 2nd layout design project for trainee position at Hotels.ru",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonDedyaev/trainee-layout-project_2.git"
+  },
+  "keywords": [
+    "Hotels.ru",
+    "layout",
+    "html",
+    "css",
+    "sass",
+    "gulp"
+  ],
+  "author": "Anton Dedyaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonDedyaev/trainee-layout-project_2/issues"
+  },
+  "homepage": "https://github.com/antonDedyaev/trainee-layout-project_2#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.12",
+    "gh-pages": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "htmlhint": "^1.1.4",
+    "sass": "^1.58.3",
+    "stylelint": "^15.2.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-order": "^6.0.2",
+    "stylelint-scss": "^4.4.0"
+  }
+}
