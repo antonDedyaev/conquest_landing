@@ -1,0 +1,95 @@
+footer {
+    display: flex;
+    justify-content: center;
+
+    background-color: $dark;
+}
+
+.footer {
+    &-columns {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 63px;
+        margin-bottom: 67px;
+
+        column-gap: 118px; // В макете промежуток между колонками был неравномерным - я установил одинаковый промежуток
+
+        h4 {
+            margin-bottom: 0;
+
+            color: $white;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+
+    }
+}
+
+.col-1 {
+    img {
+        margin-top: 4px;
+    }
+}
+
+.nav {
+    &-bottom {
+        margin-top: 18px;
+
+        font-size: 12px;
+        line-height: 14px;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: rgb(255 255 255 / 75%);
+        }
+
+    }
+
+}
+
+.col-short {
+    .nav-bottom {
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 1199px) {
+    .footer {
+        &-columns {
+            column-gap: 25px;
+        }
+    }
+}
+
+@media (max-width: 799px) {
+    .footer {
+        &-columns {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            margin: 63px 10px 67px;
+
+            column-gap: 15px;
+
+            h4 {
+                margin-bottom: 0;
+
+                color: $white;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.07em;
+                text-transform: uppercase;
+            }
+
+        }
+    }
+}

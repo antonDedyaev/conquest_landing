@@ -1,0 +1,140 @@
+.banner {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    height: 519px;
+
+    &-left {
+        position: relative;
+
+        width: 34%;
+
+        background-color: $grayish-orange;
+
+        img {
+            position: absolute;
+            top: 52px;
+            left: 177px;
+        }
+    }
+
+    &-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 66%;
+
+        background-color: $yellowish-green;
+
+        background-image: url('../images/ellipse\ банер-2.svg'), url('../images/ellipse_банер.svg');
+        background-repeat: no-repeat;
+        background-position: top right, bottom right;
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 299px;
+
+    &-header {
+        margin-top: 0;
+        margin-bottom: 35px;
+
+        color: $black;
+        font: 32px/43px 'Playfair Display', serif;
+    }
+
+    &-text {
+        margin-top: 0;
+        margin-bottom: 45px;
+
+        color: $dark;
+        font: 16px/1.5 Roboto, sans-serif;
+    }
+
+    .btn-catalogue {
+        background-color: $pastel-orange;
+    }
+}
+
+.pagination {
+    position: absolute;
+    bottom: 21px;
+    left: 552px;
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    p {
+        margin: 0 20px;
+        padding-top: 2px;
+
+        color: rgb(27 26 23 / 82%);
+
+        font: 12px/16px Prata, serif;
+    }
+}
+
+@media (max-width: 1199px) {
+    .banner {
+        &-left {
+            img {
+                top: 150px;
+                left: 100px;
+
+                width: 90%;
+                height: 45%;
+            }
+        }
+    }
+
+    .description {
+        margin-left: 100px;
+    }
+
+    .pagination {
+        bottom: 80px;
+        left: 280px;
+    }
+}
+
+@media (max-width: 799px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+        text-align: center;
+
+        &-left {
+            position: relative;
+
+            align-items: center;
+            width: auto;
+
+            img {
+                position: relative;
+                top: auto;
+                left: auto;
+            }
+        }
+
+        &-right {
+            width: 100%;
+        }
+    }
+
+    .description {
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .pagination {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+}

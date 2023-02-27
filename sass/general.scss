@@ -1,0 +1,156 @@
+@font-face {
+    font-weight: 300;
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: 'Playfair Display';
+    src: url("../fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: 'Playfair Display';
+    src: url("../fonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: Prata;
+    src: url("../fonts/Prata-Regular.ttf");
+}
+
+body {
+    margin: 0;
+
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 98px;
+    margin-left: 97px;
+}
+
+.list {
+    &-unmarked {
+        list-style: none;
+    }
+
+    &-item {
+        margin-top: 15px;
+    }
+}
+
+.menu {
+    &-horizontal {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.link {
+    &-plain {
+        text-decoration: none;
+    }
+}
+
+.standard-header {
+    color: $black;
+    font: 32px/43px 'Playfair Display', serif;
+}
+
+.btn-catalogue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 205px;
+    height: 64px;
+
+    color: $white;
+
+    font: 500 12px/14px Roboto, sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.line-left::before {
+    position: relative;
+    left: -15px;
+
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    margin-left: -50px;
+
+    vertical-align: super;
+
+    background: $grayish-baige;
+
+    content: "";
+}
+
+.line-right::after {
+    position: relative;
+    right: -15px;
+
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    margin-right: 50px;
+
+    vertical-align: super;
+
+    background: $grayish-baige;
+
+    content: "";
+}
+
+@media (max-width: 1199px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 799px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .line-left::before, .line-right::after {
+        width: 0;
+    }
+
+    .line-left::before {
+        margin-left: 5px;
+    }
+}
