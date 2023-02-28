@@ -75,7 +75,7 @@ body {
 
 .standard-header {
   color: #1B1A17;
-  font: 32px/43px "Playfair Display", serif;
+  font: 400 32px/43px "Playfair Display", serif;
 }
 
 .btn-catalogue {
@@ -658,6 +658,10 @@ body {
 
     width: 90%;
     height: 45%;
+  }
+
+  .banner-right {
+    background-image: none;
   }
 
   .description {
