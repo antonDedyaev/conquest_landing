@@ -861,6 +861,7 @@ footer {
 @media (max-width: 1199px) {
   .footer-columns {
     column-gap: 25px;
+    row-gap: 20px;
   }
 }
 
