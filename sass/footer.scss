@@ -79,6 +79,7 @@ footer {
             margin: 63px 10px 67px;
 
             column-gap: 15px;
+            row-gap: 20px;
 
             h4 {
                 margin-bottom: 0;
@@ -90,6 +91,18 @@ footer {
                 text-transform: uppercase;
             }
 
+        }
+    }
+
+    .nav {
+        &-bottom {
+            margin-top: 10px;
+        }
+    }
+
+    .col-short {
+        .nav-bottom {
+            margin-top: 2px;
         }
     }
 }
