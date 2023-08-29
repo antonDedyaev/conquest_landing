@@ -1,5 +1,5 @@
 {
-  "name": "trainee-layout-project_2",
+  "name": "conquest_landing",
   "version": "0.1.0",
   "description": "My 2nd layout design project for trainee position at Hotels.ru",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antonDedyaev/trainee-layout-project_2.git"
+    "url": "git+https://github.com/antonDedyaev/conquest_landing.git"
   },
   "keywords": [
     "Hotels.ru",
@@ -22,9 +22,9 @@
   "author": "Anton Dedyaev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/antonDedyaev/trainee-layout-project_2/issues"
+    "url": "https://github.com/antonDedyaev/conquest_landing/issues"
   },
-  "homepage": "https://github.com/antonDedyaev/trainee-layout-project_2#readme",
+  "homepage": "https://github.com/antonDedyaev/conquest_landing#readme",
   "devDependencies": {
     "browser-sync": "^2.27.12",
     "gh-pages": "^5.0.0",
